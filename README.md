@@ -4,7 +4,14 @@
 ### Intro
 [The Serpent & The Seed](https://discipleship.tech/serpentseedgame) is a mobile narrative adventure game about the Bible, by UK charity [Discipleship Tech](https://discipleship.tech).
 
-One of the early sequences in Act 1 revolves around helping Adam naming the animals. A sequence of words floats around, which are of various types (e.g. 'names' like "Fish" or "Carp", 'adjectives' like "Gold" or "White", 'nouns' like "Fins" or "Scales", or 'verb' based names like "Water-dweller" or "Dreamer"). The player can choose up to three of these words at a time, and the game cleverly combines them in a sensible way to make a coherent sounding name (e.g. "Gold water dweller", "Finned fish", "White gold dreamer", etc).
+One of the early sequences in Act 1 revolves around helping Adam naming the animals. A sequence of words floats around, which are of various types, for example:
+
+  * 'names' like "Fish" or "Carp"
+  * 'adjectives' like "Gold" or "White"
+  * 'nouns' like "Fins" or "Scales"
+  * 'verb' based names like "Water-dweller" or "Dreamer")
+  
+The player can choose up to three of these words at a time, and the game cleverly combines them in a sensible way to make a coherent sounding name (e.g. "Gold water dweller", "Finned fish", "White gold dreamer", etc).
 
 This repository just contains the code related to this aspect of the game, and a series of unit tests in different languages, to help us get the game translated in to as many languages as we can. Each language is going to need its own logic implemented for how to turn that series of words into a coherent name (plus translating the words themselves).
 
