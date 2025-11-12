@@ -16,11 +16,8 @@ public class NameBuilderTest
     public void Setup()
     {
         GameObject go = new GameObject();
-        namer = go.AddComponent<NameAnimal>();
-        namer.animalName = "Fish";
+        namer = go.AddComponent<NameAnimal>();        
         nameBuilder = go.AddComponent<AnimalNameBuilder.NameBuilder>();   
-
-        PreloadOptions();     
     }
 
     protected void PreloadOptions()
@@ -72,26 +69,44 @@ public class NameBuilderTest
 
     // Test individual words, selected on their own
     [Test]
-    [TestCase("Gold", "Gold")]
-    [TestCase("Spotted", "Spotted")]
-    [TestCase("White", "White")]
-    [TestCase("Fin", "Fin")]
-    [TestCase("Back", "Back")]
-    [TestCase("Scales", "Scales")]
-    [TestCase("Water dweller", "Water dweller")]
-    [TestCase("Teemer", "Teemer")]
-    [TestCase("Dreamer", "Dreamer")]
-    [TestCase("Fish", "Fish")]
-    [TestCase("Carp", "Carp")]
-    [TestCase("Coley", "Coley")]
-    public void NameAnimalTestSimplePasses(string inputWord, string expectedName)
+    [TestCase("Fish", new string[] { "Gold" }, "Gold")]
+    [TestCase("Fish", new string[] { "Spotted" }, "Spotted")]
+    [TestCase("Fish", new string[] { "White" }, "White")]
+    [TestCase("Fish", new string[] { "Fin" }, "Fin")]
+    [TestCase("Fish", new string[] { "Back" }, "Back")]
+    [TestCase("Fish", new string[] { "Scales" }, "Scales")]
+    [TestCase("Fish", new string[] { "Water dweller" }, "Water dweller")]
+    [TestCase("Fish", new string[] { "Teemer" }, "Teemer")]
+    [TestCase("Fish", new string[] { "Dreamer" }, "Dreamer")]
+    [TestCase("Fish", new string[] { "Fish" }, "Fish")]
+    [TestCase("Fish", new string[] { "Carp" }, "Carp")]
+    [TestCase("Fish", new string[] { "Coley" }, "Coley")]
+    [TestCase("Fish", new string[] { "Gold", "Carp" }, "Gold carp")]
+    [TestCase("Fish", new string[] { "Carp", "Gold" }, "Gold carp")] // Name should always go at the end
+    [TestCase("Fish", new string[] { "Spotted", "Gold" }, "Spotted gold")] // Two adjectives
+    [TestCase("Fish", new string[] { "Spotted", "Fish" }, "Spotted fish")]
+    [TestCase("Fish", new string[] { "White", "Coley" }, "White coley")]
+    [TestCase("Fish", new string[] { "Gold", "Fin", "Carp" }, "Gold finned carp")] // Noun changes to adjective
+    [TestCase("Fish", new string[] { "Fin", "Gold", "Carp" }, "Gold finned carp")] // Words are always in a fixed order
+    [TestCase("Fish", new string[] { "Spotted", "Water dweller" }, "Spotted water dweller")]
+    [TestCase("Fish", new string[] { "Spotted", "Water dweller", "Carp" }, "Spotted water dwelling carp")] // Verb is changed to an adjective
+    [TestCase("Yak", new string[] { "Horns", "Wool", "Cattle" }, "Horned woolly cattle")]
+    public void NameAnimalTestSimplePasses(string animalName, string[] inputWords, string expectedName)
     {
+        if (inputWords.Length > 3)
+        {
+            throw new Exception("Input should be no more than 3 words - invalid test case");
+        }
+
+        namer.animalName = animalName;
+        PreloadOptions();     
+
         List<string> words = new List<string>();
         List<int> wordIndices = new List<int>();
 
         // These are the words selected by the user, in their 'base' form
         // (as they would appear when floating around in the UI in-game)
-        List<NameAnimal.NameSuggestion> selectedElements = SelectWords(new string[] { inputWord });
+        List<NameAnimal.NameSuggestion> selectedElements = SelectWords(inputWords);
         
         nameBuilder.GenerateName(namer, selectedElements, ref words, ref wordIndices);
 
