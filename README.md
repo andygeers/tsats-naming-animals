@@ -13,7 +13,9 @@ One of the early sequences in Act 1 revolves around helping Adam naming the anim
   
 The player can choose up to three of these words at a time, and the game cleverly combines them in a sensible way to make a coherent sounding name (e.g. "Gold water dweller", "Finned fish", "White gold dreamer", etc).
 
-This repository just contains the code related to this aspect of the game, and a series of unit tests in different languages, to help us get the game translated in to as many languages as we can. Each language is going to need its own logic implemented for how to turn that series of words into a coherent name (plus translating the words themselves).
+Simply translating the words themselves into other languages is only a tiny portion of the project... The main issue is that the logic of how that selection of words gets converted into a meaningful name needs to be customised for each language.
+
+This repository just contains the code related to this aspect of the game, and a series of unit tests in different languages, to help us get the game translated in to as many languages as we can.
 
 A video about this project can be found here: [https://youtu.be/v4rjmOWTZno?si=wjhi9dBEtqELC71Z&t=132](https://youtu.be/v4rjmOWTZno?si=wjhi9dBEtqELC71Z&t=132)
 
