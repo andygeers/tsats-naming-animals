@@ -4,20 +4,52 @@ using System.Collections.Generic;
 using NUnit.Framework;
 using UnityEngine;
 using UnityEngine.TestTools;
+using UnityEngine.Localization;
+using UnityEngine.Localization.Settings;
 
-public class NameBuilderTest
+public abstract class BaseNameBuilderTest
 {
-    AnimalNameBuilder.NameBuilder nameBuilder;
-    NameAnimal namer;
+    protected AnimalNameBuilder.NameBuilder nameBuilder;
+    protected NameAnimal namer;
 
-    private List<NameAnimal.NameSuggestion> allWords;
+    protected List<NameAnimal.NameSuggestion> allWords;
+
+    private Locale _originalLocale;
+    protected Locale _testLocale;
+
+    [OneTimeSetUp]
+    public void OneTimeSetUp()
+    {
+        // Ensure the system is ready
+        LocalizationSettings.InitializationOperation.WaitForCompletion();
+
+        // Find the French locale (make sure FR is in Project Settings > Localization)
+        _testLocale = LocalizationSettings.AvailableLocales.GetLocale(new LocaleIdentifier(GetLocaleName()));
+        Assert.IsNotNull(_testLocale, "Test locale not found. Add it in Project Settings > Localization.");
+    }
+
+    protected virtual string GetLocaleName()
+    {
+        return "en-GB";
+    }
 
     [SetUp]
     public void Setup()
     {
+        _originalLocale = LocalizationSettings.SelectedLocale;
+        LocalizationSettings.SelectedLocale = _testLocale;
+        LocalizationSettings.Instance.ForceRefresh();
+
         GameObject go = new GameObject();
-        namer = go.AddComponent<NameAnimal>();        
-        nameBuilder = go.AddComponent<AnimalNameBuilder.NameBuilder>();   
+        namer = go.AddComponent<NameAnimal>();
+        nameBuilder = AnimalNameBuilder.NameBuilder.LocalisedNameBuilder();        
+    }
+    
+    [TearDown]
+    public void TearDown()
+    {
+        LocalizationSettings.SelectedLocale = _originalLocale;
+        LocalizationSettings.Instance.ForceRefresh();
     }
 
     protected void PreloadOptions()
@@ -44,7 +76,7 @@ public class NameBuilderTest
     {
         foreach (NameAnimal.NameSuggestion suggestion in allWords)
         {
-            if (suggestion.word.Equals(word))
+            if (nameBuilder.LabelForSuggestion(suggestion).Equals(word))
             {
                 return suggestion;
             }
@@ -60,38 +92,15 @@ public class NameBuilderTest
             NameAnimal.NameSuggestion suggestion = FindSuggestionMatchingWord(words[i]);
             if (suggestion == null)
             {
-                throw new Exception($"No suggestion found for word {words[i]} - probably an issue with your test case");
+                string firstSuggestion = nameBuilder.LabelForSuggestion(allWords[0]);
+                throw new Exception($"No suggestion found for word {words[i]} - probably an issue with your test case. First suggestion is {firstSuggestion}");
             }
             selectedElements.Add(suggestion);
         }
         return selectedElements;
     }
 
-    // Test individual words, selected on their own
-    [Test]
-    [TestCase("Fish", new string[] { "Gold" }, "Gold")]
-    [TestCase("Fish", new string[] { "Spotted" }, "Spotted")]
-    [TestCase("Fish", new string[] { "White" }, "White")]
-    [TestCase("Fish", new string[] { "Fin" }, "Fin")]
-    [TestCase("Fish", new string[] { "Back" }, "Back")]
-    [TestCase("Fish", new string[] { "Scales" }, "Scales")]
-    [TestCase("Fish", new string[] { "Water dweller" }, "Water dweller")]
-    [TestCase("Fish", new string[] { "Teemer" }, "Teemer")]
-    [TestCase("Fish", new string[] { "Dreamer" }, "Dreamer")]
-    [TestCase("Fish", new string[] { "Fish" }, "Fish")]
-    [TestCase("Fish", new string[] { "Carp" }, "Carp")]
-    [TestCase("Fish", new string[] { "Coley" }, "Coley")]
-    [TestCase("Fish", new string[] { "Gold", "Carp" }, "Gold carp")]
-    [TestCase("Fish", new string[] { "Carp", "Gold" }, "Gold carp")] // Name should always go at the end
-    [TestCase("Fish", new string[] { "Spotted", "Gold" }, "Spotted gold")] // Two adjectives
-    [TestCase("Fish", new string[] { "Spotted", "Fish" }, "Spotted fish")]
-    [TestCase("Fish", new string[] { "White", "Coley" }, "White coley")]
-    [TestCase("Fish", new string[] { "Gold", "Fin", "Carp" }, "Gold finned carp")] // Noun changes to adjective
-    [TestCase("Fish", new string[] { "Fin", "Gold", "Carp" }, "Gold finned carp")] // Words are always in a fixed order
-    [TestCase("Fish", new string[] { "Spotted", "Water dweller" }, "Spotted water dweller")]
-    [TestCase("Fish", new string[] { "Spotted", "Water dweller", "Carp" }, "Spotted water dwelling carp")] // Verb is changed to an adjective
-    [TestCase("Yak", new string[] { "Horns", "Wool", "Cattle" }, "Horned woolly cattle")]
-    public void NameAnimalTestSimplePasses(string animalName, string[] inputWords, string expectedName)
+    protected void TestNameCombo(string animalName, string[] inputWords, string expectedName)
     {
         if (inputWords.Length > 3)
         {
@@ -107,12 +116,22 @@ public class NameBuilderTest
         // These are the words selected by the user, in their 'base' form
         // (as they would appear when floating around in the UI in-game)
         List<NameAnimal.NameSuggestion> selectedElements = SelectWords(inputWords);
-        
+
         nameBuilder.GenerateName(namer, selectedElements, ref words, ref wordIndices);
 
+        Assert.AreEqual(words.Count, wordIndices.Count);
+
+        int wordCount = 0;
+        for (int i = 0; i < words.Count; i ++)
+        {
+            if (wordIndices[i] != -1)
+            {
+                wordCount++;
+            }
+        }
+
         // Assert that the resulting name has the expected number of words in it
-        Assert.AreEqual(words.Count, selectedElements.Count);
-        Assert.AreEqual(wordIndices.Count, selectedElements.Count);
+        Assert.AreEqual(wordCount, selectedElements.Count);        
 
         // Assert that the resulting name is what we would expect
         Assert.AreEqual(expectedName, AnimalNameBuilder.NameBuilder.BuildString(ref words));

@@ -90,7 +90,11 @@ namespace AnimalNameBuilder
                 if (hasInsertedAdjective)
                 {
                     string joiningWord = GetJoiningWord();
-                    if (joiningWord != null) words.Add(joiningWord);
+                    if (joiningWord != null)
+                    {
+                        words.Add(joiningWord);
+                        wordIndices.Add(-1);
+                    }
                 }
 
                 string word = AdjectiveFromSuggestion(namer, suggestion);
