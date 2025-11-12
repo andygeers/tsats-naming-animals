@@ -13,6 +13,8 @@ One of the early sequences in Act 1 revolves around helping Adam naming the anim
   
 The player can choose up to three of these words at a time, and the game cleverly combines them in a sensible way to make a coherent sounding name (e.g. "Gold water dweller", "Finned fish", "White gold dreamer", etc).
 
+**We want The Serpent & The Seed to be accessible in as many different languages as possible**. In the Great Commission, Jesus called his followers to go into all the earth with his gospel message. But translating this particular bit of the game is quite a challenge!
+
 Simply translating the words themselves into other languages is only a tiny portion of the project... The main issue is that the logic of how that selection of words gets converted into a meaningful name needs to be customised for each language.
 
 This repository just contains the code related to this aspect of the game, and a series of unit tests in different languages, to help us get the game translated in to as many languages as we can.
