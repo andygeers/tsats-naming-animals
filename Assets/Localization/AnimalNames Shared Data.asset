@@ -1,0 +1,868 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: AnimalNames Shared Data
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.SharedTableData
+  m_TableCollectionName: AnimalNames
+  m_TableCollectionNameGuidString: a06d2ee7289bc4336ab00a015a8d7718
+  m_Entries:
+  - m_Id: 18143502336
+    m_Key: Fish_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140852060160
+    m_Key: Fish_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204907470848
+    m_Key: Fish_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249132212224
+    m_Key: Fish_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288495755264
+    m_Key: Fish_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291914113024
+    m_Key: Fish_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 608009445376
+    m_Key: Fish_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662971604992
+    m_Key: Fish_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 691396403200
+    m_Key: Fish_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709851340800
+    m_Key: Fish_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 739681230848
+    m_Key: Fish_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 756525555712
+    m_Key: Fish_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26996431118336
+    m_Key: Fish_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27033395519488
+    m_Key: Fish_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27042459410432
+    m_Key: Fish_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28053055987712
+    m_Key: Fish_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28064514826240
+    m_Key: Fish_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28074413383680
+    m_Key: Fish_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453760715907072
+    m_Key: Yak_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453781943279616
+    m_Key: Yak_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453791510487040
+    m_Key: Yak_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453828525219840
+    m_Key: Yak_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453852713771008
+    m_Key: Yak_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453863455383552
+    m_Key: Yak_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453896309366784
+    m_Key: Yak_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453918849556480
+    m_Key: Yak_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453927275913216
+    m_Key: Yak_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453962671644672
+    m_Key: Yak_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453979817959424
+    m_Key: Yak_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453990756704256
+    m_Key: Yak_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6453999501828096
+    m_Key: Yak_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454017835130880
+    m_Key: Yak_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454028039872512
+    m_Key: Yak_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454062600937472
+    m_Key: Yak_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454083136249856
+    m_Key: Yak_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454093001252864
+    m_Key: Yak_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454130464776192
+    m_Key: Yak_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454151797006336
+    m_Key: Yak_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454161959804928
+    m_Key: Yak_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496448
+    m_Key: Llama_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496449
+    m_Key: Llama_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496450
+    m_Key: Llama_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496451
+    m_Key: Llama_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496452
+    m_Key: Llama_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496453
+    m_Key: Llama_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496454
+    m_Key: Llama_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496455
+    m_Key: Llama_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496456
+    m_Key: Llama_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496457
+    m_Key: Llama_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496458
+    m_Key: Llama_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496459
+    m_Key: Llama_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496460
+    m_Key: Llama_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496461
+    m_Key: Llama_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496462
+    m_Key: Llama_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496463
+    m_Key: Llama_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496464
+    m_Key: Llama_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496465
+    m_Key: Llama_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496466
+    m_Key: Llama_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496467
+    m_Key: Llama_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496468
+    m_Key: Llama_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496469
+    m_Key: Mandrill_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496470
+    m_Key: Mandrill_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496471
+    m_Key: Mandrill_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496472
+    m_Key: Mandrill_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496473
+    m_Key: Mandrill_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496474
+    m_Key: Mandrill_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496475
+    m_Key: Mandrill_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496476
+    m_Key: Mandrill_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496477
+    m_Key: Mandrill_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496478
+    m_Key: Mandrill_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496479
+    m_Key: Mandrill_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496480
+    m_Key: Mandrill_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496481
+    m_Key: Mandrill_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496482
+    m_Key: Mandrill_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496483
+    m_Key: Mandrill_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496484
+    m_Key: Mandrill_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496485
+    m_Key: Mandrill_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496486
+    m_Key: Mandrill_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496487
+    m_Key: Mandrill_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496488
+    m_Key: Mandrill_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496489
+    m_Key: Mandrill_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496490
+    m_Key: Meerkat_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496491
+    m_Key: Meerkat_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496492
+    m_Key: Meerkat_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496493
+    m_Key: Meerkat_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496494
+    m_Key: Meerkat_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496495
+    m_Key: Meerkat_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496496
+    m_Key: Meerkat_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496497
+    m_Key: Meerkat_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496498
+    m_Key: Meerkat_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496499
+    m_Key: Meerkat_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496500
+    m_Key: Meerkat_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496501
+    m_Key: Meerkat_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496502
+    m_Key: Meerkat_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496503
+    m_Key: Meerkat_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496504
+    m_Key: Meerkat_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496505
+    m_Key: Meerkat_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496506
+    m_Key: Meerkat_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496507
+    m_Key: Meerkat_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496508
+    m_Key: Meerkat_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496509
+    m_Key: Meerkat_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6454916955496510
+    m_Key: Meerkat_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368484610048
+    m_Key: Elephant_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804352
+    m_Key: Elephant_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804353
+    m_Key: Elephant_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804354
+    m_Key: Elephant_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804355
+    m_Key: Elephant_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804356
+    m_Key: Elephant_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804357
+    m_Key: Elephant_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804358
+    m_Key: Elephant_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368488804359
+    m_Key: Elephant_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998656
+    m_Key: Elephant_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998657
+    m_Key: Elephant_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998658
+    m_Key: Elephant_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998659
+    m_Key: Elephant_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998660
+    m_Key: Elephant_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998661
+    m_Key: Elephant_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998662
+    m_Key: Elephant_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998663
+    m_Key: Elephant_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998664
+    m_Key: Elephant_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998665
+    m_Key: Elephant_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998666
+    m_Key: Elephant_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6911368492998667
+    m_Key: Elephant_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666297003008000
+    m_Key: TreeOfLife_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666321594212352
+    m_Key: TreeOfLife_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20666330918150144
+    m_Key: TreeOfLife_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671146293714944
+    m_Key: TreeOfLife2_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671171329515520
+    m_Key: TreeOfLife2_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671186290597888
+    m_Key: TreeOfLife2_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671709957840896
+    m_Key: TreeOfLife_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671736360984576
+    m_Key: TreeOfLife_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671744284024832
+    m_Key: TreeOfLife_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671952417972224
+    m_Key: TreeOfLife2_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671973901197312
+    m_Key: TreeOfLife2_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 20671984038830080
+    m_Key: TreeOfLife2_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22017957444968448
+    m_Key: TestingTree_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22018001652932608
+    m_Key: TestingTree_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22018011920588800
+    m_Key: TestingTree_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22018026919419904
+    m_Key: TestingTree_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22018092027600896
+    m_Key: TestingTree_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22018099778674688
+    m_Key: TestingTree_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22395141435154432
+    m_Key: DivineDecree_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22395171982270464
+    m_Key: DivineDecree_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22395191016022016
+    m_Key: DivineDecree_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22431568684376064
+    m_Key: TestingTree_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22431590226321408
+    m_Key: TestingTree_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 22431597742514176
+    m_Key: TestingTree_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956012038283264
+    m_Key: Frog_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956031734734848
+    m_Key: Frog_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956039892656128
+    m_Key: Frog_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956066400657408
+    m_Key: Frog_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956084683628544
+    m_Key: Frog_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956091394514944
+    m_Key: Frog_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956139847114752
+    m_Key: Frog_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956161489723392
+    m_Key: Frog_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956168972361728
+    m_Key: Frog_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956212999970816
+    m_Key: Frog_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956227189301248
+    m_Key: Frog_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956234806157312
+    m_Key: Frog_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956241550598144
+    m_Key: Frog_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956256620732416
+    m_Key: Frog_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956263600054272
+    m_Key: Frog_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956319266856960
+    m_Key: Frog_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956335708528640
+    m_Key: Frog_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956342754959360
+    m_Key: Frog_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956377987112960
+    m_Key: Frog_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956392885280768
+    m_Key: Frog_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49956401680736256
+    m_Key: Frog_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435435806720
+    m_Key: Otter_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001024
+    m_Key: Otter_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001025
+    m_Key: Otter_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001026
+    m_Key: Otter_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001027
+    m_Key: Otter_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001028
+    m_Key: Otter_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001029
+    m_Key: Otter_Place_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001030
+    m_Key: Otter_Place_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001031
+    m_Key: Otter_Place_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001032
+    m_Key: Otter_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435440001033
+    m_Key: Otter_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195328
+    m_Key: Otter_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195329
+    m_Key: Otter_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195330
+    m_Key: Otter_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195331
+    m_Key: Otter_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195332
+    m_Key: Otter_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195333
+    m_Key: Otter_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195334
+    m_Key: Otter_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195335
+    m_Key: Otter_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195336
+    m_Key: Otter_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 49996435444195337
+    m_Key: Otter_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380918423552
+    m_Key: Hummer_Adjective_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006464
+    m_Key: Hummer_Adjective_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006465
+    m_Key: Hummer_Adjective_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006466
+    m_Key: Hummer_Noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006467
+    m_Key: Hummer_Noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006468
+    m_Key: Hummer_Noun_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006469
+    m_Key: Hummer_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006470
+    m_Key: Hummer_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006471
+    m_Key: Hummer_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006472
+    m_Key: Hummer_Name_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006473
+    m_Key: Hummer_Name_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006474
+    m_Key: Hummer_Name_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006475
+    m_Key: Hummer_Imperfect_Verb_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006476
+    m_Key: Hummer_Imperfect_Verb_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006477
+    m_Key: Hummer_Imperfect_Verb_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006478
+    m_Key: Hummer_Noun_as_adj_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006479
+    m_Key: Hummer_Noun_as_adj_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 316640380931006480
+    m_Key: Hummer_Noun_as_adj_2
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569213599277056
+    m_Key: Fish_Adj_as_noun_0
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569220003979264
+    m_Key: Fish_Adj_as_noun_1
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569228992372736
+    m_Key: Fish_Adj_as_noun_2
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 6596158553079152757
+  references:
+    version: 2
+    RefIds:
+    - rid: 6596158553079152757
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1762943287287

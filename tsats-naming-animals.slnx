@@ -1,0 +1,5 @@
+﻿<Solution>
+  <Project Path="PluginsAssembly.csproj" />
+  <Project Path="ScriptAssembly.csproj" />
+  <Project Path="Tests.csproj" />
+</Solution>

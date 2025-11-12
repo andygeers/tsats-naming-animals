@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: AnimalNames_fr
+  m_EditorClassIdentifier: Unity.Localization::UnityEngine.Localization.Tables.StringTable
+  m_LocaleId:
+    m_Code: fr
+  m_SharedData: {fileID: 11400000, guid: a06d2ee7289bc4336ab00a015a8d7718, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 18143502336
+    m_Localized: "Dor\xE9:Dor\xE9e:Dor\xE9s:Dor\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 140852060160
+    m_Localized: "Tachet\xE9:Tachet\xE9e:Tachet\xE9s:Tachet\xE9es"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 204907470848
+    m_Localized: Blanc:Blanche:Blancs:Blanches
+    m_Metadata:
+      m_Items: []
+  - m_Id: 249132212224
+    m_Localized: Nageoire:F
+    m_Metadata:
+      m_Items: []
+  - m_Id: 288495755264
+    m_Localized: Dos:M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 291914113024
+    m_Localized: "\xC9cailles:FF"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 608009445376
+    m_Localized: Aquatique
+    m_Metadata:
+      m_Items: []
+  - m_Id: 662971604992
+    m_Localized: "R\xEAveur:R\xEAveuse"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 709851340800
+    m_Localized: Poisson:M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 739681230848
+    m_Localized: Carpe:F
+    m_Metadata:
+      m_Items: []
+  - m_Id: 26996431118336
+    m_Localized: qui vit dans l'eau
+    m_Metadata:
+      m_Items: []
+  - m_Id: 27033395519488
+    m_Localized: "qui r\xEAve"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28053055987712
+    m_Localized: "\xE0 la nageoires"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28064514826240
+    m_Localized: "\xE0 dos"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 28074413383680
+    m_Localized: "aux \xE9cailles"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569213599277056
+    m_Localized: Or:M
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569220003979264
+    m_Localized: Taches:FF
+    m_Metadata:
+      m_Items: []
+  - m_Id: 514569228992372736
+    m_Localized: Truc Blanc:M
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
